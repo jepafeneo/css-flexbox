@@ -3,6 +3,35 @@ body {
   margin: auto;
 }
 
+header {
+  border: solid;
+  height: 40vh;
+  color: white;
+
+  /* text-align: center; */
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../img/flexbox-fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header > div {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  transition: background-color 0.3s ease;
+}
+
+header > div:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .menu > ul {
   list-style: none;
   display: flex;
@@ -29,7 +58,7 @@ body {
 }
 
 footer {
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   border: 1px solid black;
   margin-bottom: 2em;
   display: flex;
